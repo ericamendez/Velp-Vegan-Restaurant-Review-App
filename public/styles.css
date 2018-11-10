@@ -1,0 +1,122 @@
+body{
+  background: white;
+  margin:0;
+  background-color: rgb(58,80,64);
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+header{
+  background-image: url(back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  text-align: center;
+  color: rgb(58,80,64);
+}
+
+.hc{
+  height: 300px;
+  background-color: rgba(255,255,255,.2)
+}
+
+h1{
+  margin: 0;
+  font-size: 7em;
+  padding-top: 20px;
+}
+header h2{
+  font-size: 2em;
+}
+
+main{
+  background-color: rgb(58,80,64);
+  color: white;
+  padding: 20px 30px;
+}
+
+main h2{
+  margin:0;
+  padding: 20px 0;
+  font-size: 1.6em;
+}
+
+input{
+  font-size: 1.4em;
+}
+
+button{
+  background-color: rgb(166,203,141);
+  color:white;
+  border:none;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 2px 7px;
+}
+button:hover{
+background-color: white;
+color: rgb(58,80,64);
+}
+
+.inCon{
+  text-align: center;
+  padding: 20px 0 40px 0;
+}
+
+h3{
+  margin: 0 0 15px 0;
+  font-size: 3em;
+  color: rgb(166,203,141);
+  padding-top: 30px;
+}
+
+main>h2, form{
+  text-align: center;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+li{
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+span.br{
+  display: block;
+  padding-bottom: 10px;
+}
+
+#restName{
+  font-size: 2em;
+}
+
+.iconAct{
+  font-size: 1.4em;
+}
+
+.iAS{
+  padding-right: 7px;
+}
+
+/* tablet */
+@media (min-width: 700px) and (max-width: 1024px){
+  ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 699px){
+  ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}

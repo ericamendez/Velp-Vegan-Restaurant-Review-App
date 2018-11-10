@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Velp</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <section class="hc">
+      <h1>Velp</h1>
+      <h2>Boston's Local Vegan Restaurant Recommendations</h2>
+    </section>
+  </header>
+
+  <main>
+    <h2>Add Boston Vegan Restaurant & Review</h2>
+
+    <form action="/messages" method="POST">
+      <input type="text" placeholder="Restaurant Name" name="name">
+      <input type="text" placeholder="Review" name="msg">
+      <button type="submit">Submit</button>
+    </form>
+
+    <h3>Reviews</h3>
+    <ul class="messages">
+      <!-- Iterating thorugh the array -->
+      <% for(var i=0; i<messages.length; i++) {%>
+        <li class="message">
+          <span class="br" id="restName"><%= messages[i].name %></span>
+          <span class="br"><%= messages[i].msg %></span>
+          <span class="iconAct"><%= messages[i].thumbUp %></span>
+          <span class="iconAct iAS">
+            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+          </span>
+          <span class="iconAct"><%= messages[i].thumbDown %></span>
+          <span class="iconAct iAS">
+            <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+          </span>
+          <span class="iconAct iAS">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </span>
+        </li>
+        <% } %>
+      </ul>
+  </main>
+
+
+
+  <script src="main.js"></script>
+
+</body>
+</html>

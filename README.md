@@ -1,6 +1,6 @@
 
 # Velp-Vegan-Restaurant-Review-App
-A Fullstack Vegan Restaurant Review App
+A Fullstack Vegan Restaurant Review Sharing App. User's enter Vegan restaurant recommendations and reviews. 
 
 ![alt tag](screen.png)
 
